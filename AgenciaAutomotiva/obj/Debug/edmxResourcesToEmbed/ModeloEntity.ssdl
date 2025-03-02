@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AgenciaAutomotivaBDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Veiculos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="marca" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="modelo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ano" Type="int" Nullable="false" />
+    <Property Name="cor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fabricacao" Type="date" Nullable="false" />
+    <Property Name="combustivel" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="automatico" Type="bit" Nullable="false" />
+    <Property Name="valor" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ativo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="AgenciaAutomotivaBDModelStoreContainer">
+    <EntitySet Name="Veiculos" EntityType="Self.Veiculos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
