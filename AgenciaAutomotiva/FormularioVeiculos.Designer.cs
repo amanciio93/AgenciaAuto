@@ -30,13 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioVeiculos));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.novoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.buscarToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.excluirToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,6 +54,10 @@
             this.txtFabricacao = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.novoToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.salvarToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.buscarToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.excluirToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,52 +78,20 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // novoToolStripButton
-            // 
-            this.novoToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripButton.Image")));
-            this.novoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.novoToolStripButton.Name = "novoToolStripButton";
-            this.novoToolStripButton.Size = new System.Drawing.Size(56, 22);
-            this.novoToolStripButton.Text = "&Novo";
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // salvarToolStripButton
-            // 
-            this.salvarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("salvarToolStripButton.Image")));
-            this.salvarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.salvarToolStripButton.Name = "salvarToolStripButton";
-            this.salvarToolStripButton.Size = new System.Drawing.Size(58, 22);
-            this.salvarToolStripButton.Text = "&Salvar";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
             // 
-            // buscarToolStripButton
-            // 
-            this.buscarToolStripButton.Image = global::AgenciaAutomotiva.Properties.Resources.xmag_search_find_export_locate_5984;
-            this.buscarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.buscarToolStripButton.Name = "buscarToolStripButton";
-            this.buscarToolStripButton.Size = new System.Drawing.Size(62, 22);
-            this.buscarToolStripButton.Text = "&Buscar";
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // excluirToolStripButton
-            // 
-            this.excluirToolStripButton.Image = global::AgenciaAutomotiva.Properties.Resources.delete_delete_exit_1577;
-            this.excluirToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.excluirToolStripButton.Name = "excluirToolStripButton";
-            this.excluirToolStripButton.Size = new System.Drawing.Size(62, 22);
-            this.excluirToolStripButton.Text = "&Excluir";
             // 
             // toolStripSeparator1
             // 
@@ -303,6 +271,39 @@
             this.label5.Size = new System.Drawing.Size(74, 13);
             this.label5.TabIndex = 19;
             this.label5.Text = "FABRICAÇÃO";
+            // 
+            // novoToolStripButton
+            // 
+            this.novoToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripButton.Image")));
+            this.novoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.novoToolStripButton.Name = "novoToolStripButton";
+            this.novoToolStripButton.Size = new System.Drawing.Size(56, 22);
+            this.novoToolStripButton.Text = "&Novo";
+            // 
+            // salvarToolStripButton
+            // 
+            this.salvarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("salvarToolStripButton.Image")));
+            this.salvarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.salvarToolStripButton.Name = "salvarToolStripButton";
+            this.salvarToolStripButton.Size = new System.Drawing.Size(58, 22);
+            this.salvarToolStripButton.Text = "&Salvar";
+            // 
+            // buscarToolStripButton
+            // 
+            this.buscarToolStripButton.Image = global::AgenciaAutomotiva.Properties.Resources.xmag_search_find_export_locate_5984;
+            this.buscarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.buscarToolStripButton.Name = "buscarToolStripButton";
+            this.buscarToolStripButton.Size = new System.Drawing.Size(62, 22);
+            this.buscarToolStripButton.Text = "&Buscar";
+            this.buscarToolStripButton.Click += new System.EventHandler(this.buscarToolStripButton_Click);
+            // 
+            // excluirToolStripButton
+            // 
+            this.excluirToolStripButton.Image = global::AgenciaAutomotiva.Properties.Resources.delete_delete_exit_1577;
+            this.excluirToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.excluirToolStripButton.Name = "excluirToolStripButton";
+            this.excluirToolStripButton.Size = new System.Drawing.Size(62, 22);
+            this.excluirToolStripButton.Text = "&Excluir";
             // 
             // FormularioVeiculos
             // 

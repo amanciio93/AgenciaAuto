@@ -83,6 +83,16 @@ namespace AgenciaAutomotiva.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap select_ok_accept_15254 {
+            get {
+                object obj = ResourceManager.GetObject("select_ok_accept_15254", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap xmag_search_find_export_locate_5984 {
             get {
                 object obj = ResourceManager.GetObject("xmag_search_find_export_locate_5984", resourceCulture);

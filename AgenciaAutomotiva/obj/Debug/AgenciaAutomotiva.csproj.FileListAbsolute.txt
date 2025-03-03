@@ -13,3 +13,4 @@ C:\Users\amanc\source\repos\AgenciaAutomotiva\AgenciaAutomotiva\bin\Debug\Entity
 C:\Users\amanc\source\repos\AgenciaAutomotiva\AgenciaAutomotiva\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\amanc\source\repos\AgenciaAutomotiva\AgenciaAutomotiva\obj\Debug\AgenciaAutomotiva.FormularioVeiculos.resources
 C:\Users\amanc\source\repos\AgenciaAutomotiva\AgenciaAutomotiva\obj\Debug\AgenciaA.B48450DE.Up2Date
+C:\Users\amanc\source\repos\AgenciaAutomotiva\AgenciaAutomotiva\obj\Debug\AgenciaAutomotiva.FormularioBuscarVeiculo.resources
